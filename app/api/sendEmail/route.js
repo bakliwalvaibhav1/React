@@ -25,7 +25,7 @@ export async function POST(request) {
     secure: true, // Use true for TLS
     auth: {
       user: "support@vaibhavbakliwal.com", // Change this to your email address
-      pass: "Rishabh@11", // Change this to your email password
+      pass: process.env.REACT_APP_EMAIL_PASS, // Change this to your email password
     },
   });
 

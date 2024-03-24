@@ -13,7 +13,7 @@ const ContactForm = ({ formValidity, submitStatus, prevName, formFields, onChang
           transition={{ duration: 0.5 }}
           className={`row-span-2 p-2 md:row-span-1 md:h-10 md:col-span-2 ${submitStatus === "succeed" ? "bg-teal-600 text:xs h-auto" : "bg-red-500 h-10 mt-auto"}`}
         >
-          {submitStatus === "succeed" ? `Thank you ${prevName} for reaching out! We'll be in touch as soon as possible.` : `*All fields are required`}
+          {submitStatus === "succeed" ? `Thank you ${prevName} for reaching out! I will be in touch as soon as possible.` : `*All fields are required`}
         </motion.div>
       ) : (
         <div className="row-span-2 md:row-span-1 md:h-10 md:col-span-2" />
